@@ -1,0 +1,6 @@
+var namesurname = prompt("Введите своё имя")
+console.log("namesurname")
+var planetName = ("Земля")
+console.log("planetName")
+var doYouLive = confirm("Живешь ли ты на планете " + planetName + ", " + namesurname + "?")
+console.log("doYouLive")
