@@ -1,5 +1,5 @@
-var namesurname = prompt("Ваше Имя");
-console.log("namesurname")
-var greeting = alert("Добро пожаловать, " + namesurname + "!");
+var nameSurname = prompt("Ваше Имя");
+console.log("nameSurname")
+var greeting = alert("Добро пожаловать, " + nameSurname + "!");
 console.log("greeting")
 
