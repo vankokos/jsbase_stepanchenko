@@ -11,11 +11,9 @@ var numbersBetweenSum = 0;
 while (numberOne <= numberTwo) {
     numbersBetweenSum+=numberOne;  
     numberOne++;
+
+    if (numberOne % 2 !== 0) {
+        console.log(numberOne)
+    }
 } 
-
-while (numberTwo <= numberOne) {
-    numbersBetweenSum+=numberTwo;  
-    numberTwo++;
-}
-
 console.log(numbersBetweenSum)
