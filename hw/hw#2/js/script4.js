@@ -15,5 +15,9 @@ while (numberOne <= numberTwo) {
     if (numberOne % 2 !== 0) {
         console.log(numberOne)
     }
+
+    if (numberOne == numberTwo) {
+        alert("error")
+    }
 } 
 console.log(numbersBetweenSum)
