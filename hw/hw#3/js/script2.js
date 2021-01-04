@@ -13,55 +13,15 @@ var heavyweights = ["Ali", "Tyson", "Lewis", "Joshua", "Fury", "Wilder", "Marcia
 var heavyweightsElement = prompt("Name of your favourite heavyweight boxer: ")
     console.log("users heavyweight: " + heavyweightsElement)
 
-if (heavyweightsElement==heavyweights[0]) {
-    var heavyweightsElementTwo = prompt("Name that you entered is already on the list, enter something else: ")
-        console.log(heavyweightsElementTwo)
+var heavyweightIndex = heavyweights.indexOf(heavyweightsElement, 0);
+console.log("index: " + heavyweightIndex)
 
-    heavyweights.splice(1,0, heavyweightsElementTwo)
-    console.log("heavyweight array:" + heavyweights)
+if (heavyweightIndex > -1) {
+    var heavyweightsElementTwo = prompt("The array already has this name, please add another one: ")
 
-} else if (heavyweightsElement==heavyweights[1]) {
-    var heavyweightsElementTwo = prompt("Name that you entered is already on the list, enter something else: ")
-        console.log(heavyweightsElementTwo)
-
-    heavyweights.splice(2,0, heavyweightsElementTwo)
-    console.log("heavyweight array:" + heavyweights)
-
-} else if (heavyweightsElement==heavyweights[2]) {
-    var heavyweightsElementTwo = prompt("Name that you entered is already on the list, enter something else: ")
-        console.log(heavyweightsElementTwo)
-
-    heavyweights.splice(3,0, heavyweightsElementTwo)
-    console.log("heavyweight array:" + heavyweights)
-
-} else if (heavyweightsElement==heavyweights[3]) {
-    var heavyweightsElementTwo = prompt("Name that you entered is already on the list, enter something else: ")
-        console.log(heavyweightsElementTwo)
-
-    heavyweights.splice(4,0, heavyweightsElementTwo)
-    console.log("heavyweight array:" + heavyweights)
-
-} else if (heavyweightsElement==heavyweights[4]) {
-    var heavyweightsElementTwo = prompt("Name that you entered is already on the list, enter something else: ")
-        console.log(heavyweightsElementTwo)
-
-    heavyweights.splice(5,0, heavyweightsElementTwo)
-    console.log("heavyweight array:" + heavyweights)
-
-} else if (heavyweightsElement==heavyweights[5]) {
-    var heavyweightsElementTwo = prompt("Name that you entered is already on the list, enter something else: ")
-        console.log(heavyweightsElementTwo)
-
-    heavyweights.splice(6,0, heavyweightsElementTwo)
-    console.log("heavyweight array:" + heavyweights)
-
-} else if (heavyweightsElement==heavyweights[6]) {
-    var heavyweightsElementTwo = prompt("Name that you entered is already on the list, enter something else: ")
-        console.log(heavyweightsElementTwo)
-
-    heavyweights.splice(7,0, heavyweightsElementTwo)
-    console.log("heavyweight array:" + heavyweights)
+    heavyweights.splice([heavyweightIndex + 1], 0, heavyweightsElementTwo)
+    console.log(heavyweights)
 } else {
-    heavyweights.splice(7,0, heavyweightsElement);
-    console.log("heavyweight array:" + heavyweights)
+    heavyweights.push(heavyweightsElement);
+    console.log(heavyweights)
 }
