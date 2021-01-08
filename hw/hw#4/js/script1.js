@@ -33,6 +33,10 @@ function calculate(a, b, sign) {
             break;
 
         case "/":
+            if (b == 0) {
+                console.log("Divided by zero");
+                return;
+             }
             result = a / b;
             break;
             
