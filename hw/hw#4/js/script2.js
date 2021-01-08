@@ -10,7 +10,7 @@ function test (a,b) {
         console.log("not a number")
     }
 
-    for(let i = 0; i < b; i++) {
+    for(let i = 0; i < b; i++) {    
         result *= a;
     }
     return result;

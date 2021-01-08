@@ -39,9 +39,11 @@ function calculate(a, b, sign) {
             console.log("not a sign");
     }
 
-    if (result !== null) {
+    if (result !== undefined) {
         console.log("your result is: " + result);
+    } else {
+        console.log("no result")
     }
 }
 
-console.log(calculate(firstNumber, secondNumber, sign))
+calculate(firstNumber, secondNumber, sign)
