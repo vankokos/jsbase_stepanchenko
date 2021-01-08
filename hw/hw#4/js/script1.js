@@ -15,7 +15,7 @@ function calculate(a, b, sign) {
     var result;
 
     if (Number.isNaN(a) || Number.isNaN(b)) {
-        console.log("not a number")
+        return "not a number"
     } 
     
     switch (sign) {
