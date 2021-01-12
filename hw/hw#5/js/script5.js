@@ -68,14 +68,14 @@ team.sort(function(a,b) {
             } else {return 0;}
             break;
         
-        // case "occupation":
-        //     if (a["occupation"] > b["occupation"]) {
-        //         return 1;
-        //     }
-        //     else if (a["occupation"] < b["occupation"]) {
-        //         return -1;
-        //     } else {return 0;}
-        //     break;
+        case "occupation":
+            if (a["occupation"] > b["occupation"]) {
+                return 1;
+            }
+            else if (a["occupation"] < b["occupation"]) {
+                return -1;
+            } else {return 0;}
+            break;
 
         case "age":
             return a["age"] - b["age"];
