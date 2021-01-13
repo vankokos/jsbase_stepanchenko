@@ -49,45 +49,47 @@ salary(team);
 var sortable = prompt("name, sName, age, occupation, salary")
 
 team.sort(function(a,b) {
-    switch (sortable) {
-        case "name":
-            if (a["name"] > b["name"]) {
-                return 1;
-            }
-            else if (a["name"] < b["name"]) {
-                return -1;
-            } else {return 0;}
-            break;
+    // switch (sortable) {
+    //     case "name":
+    //         if (a["name"] > b["name"]) {
+    //             return 1;
+    //         }
+    //         else if (a["name"] < b["name"]) {
+    //             return -1;
+    //         }
+    //         break;
 
-        case "sName":
-            if (a["sName"] > b["sName"]) {
-                return 1;
-            }
-            else if (a["sName"] < b["sName"]) {
-                return -1;
-            } else {return 0;}
-            break;
+    //     case "sName":
+    //         if (a["sName"] > b["sName"]) {
+    //             return 1;
+    //         }
+    //         else if (a["sName"] < b["sName"]) {
+    //             return -1;
+    //         }
+    //         break;
         
-        case "occupation":
-            if (a["occupation"] > b["occupation"]) {
-                return 1;
-            }
-            else if (a["occupation"] < b["occupation"]) {
-                return -1;
-            } else {return 0;}
-            break;
+    //     case "occupation":
+    //         if (a["occupation"] > b["occupation"]) {
+    //             return 1;
+    //         }
+    //         else if (a["occupation"] < b["occupation"]) {
+    //             return -1;
+    //         }
+    //         break;
 
-        case "age":
-            return a["age"] - b["age"];
-            break;
+    //     case "age":
+    //         return a["age"] - b["age"];
+    //         break;
 
-        case "salary":
-            return a["salary"] - b["salary"];
-            break;
+    //     case "salary":
+    //         return a["salary"] - b["salary"];
+    //         break;
 
-        default:
-            alert("None");
-    }
+    //     default:
+    //         alert("None");
+    // }
+
+    
 }
 )
 
