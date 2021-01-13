@@ -2,33 +2,25 @@
 //        содержащий свойства: name, sName, age, occupation, и метод show, который выводит всю информацию о пользователе.
 //        Реализовать заполнение массива пользователем. По окончанию заполнения — вывести информацию о сотрудниках.
 
-var team = new Array(
-    p1 = {
-        name: name = prompt("Имя 1-го сотрудника:"), 
-        sName: sName = prompt("Фамилия 1-го сотрудника"),
-        age: age = prompt("Возраст 1-го сотрудника"),
-        occupation: occupation = prompt("Должность 1-го сотрудника"),
-        show: function show() {
-            console.log("Имя 1-го сотрудника: " + p1.name);
-            console.log("Фамилия 1-го сотрудника: " + p1.sName);
-            console.log("Возраст 1-го сотрудника: " + p1.age);
-            console.log("Должность 1-го сотрудника: " + p1.occupation);
-        }
-    },
+let team = []
+let newUser;
 
-    p2 = {
-        name: name = prompt("Имя 2-го сотрудника:"), 
-        sName: sName = prompt("Фамилия 2-го сотрудника:"),
-        age: age = prompt("Возраст 2-го сотрудника:"),
-        occupation: occupation = prompt("Должность 2-го сотрудника:"),
+do {
+    team.push({
+        name: name = prompt("Имя сотрудника:"), 
+        sName: sName = prompt("Фамилия сотрудника"),
+        age: age = prompt("Возраст сотрудника"),
+        occupation: occupation = prompt("Должность сотрудника"),
         show: function show() {
-            console.log("Имя 2-го сотрудника: " + p2.name);
-            console.log("Фамилия 2-го сотрудника: " + p2.sName);
-            console.log("Возраст 2-го сотрудника: " + p2.age);
-            console.log("Должность 2-го сотрудника: " + p2.occupation);
+            console.log("Имя сотрудника: " + this.name);
+            console.log("Фамилия сотрудника: " + this.sName);
+            console.log("Возраст сотрудника: " + this.age);
+            console.log("Должность сотрудника: " + this.occupation);
         }
-    },
-)
+    })
+    newUser = confirm("Хотите добавить нового сотрудника?")
+} while (newUser)
 
-team[0].show()
-team[1].show()
+for (let i = 0; i < team.length; i++) {
+    team[i].show();
+}
