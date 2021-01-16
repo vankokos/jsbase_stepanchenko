@@ -46,52 +46,45 @@ function salary(a) {
 
 salary(team);
 
-var sortable = prompt("name, sName, age, occupation, salary")
 
-team.sort(function(a,b) {
-    // switch (sortable) {
-    //     case "name":
-    //         if (a["name"] > b["name"]) {
-    //             return 1;
-    //         }
-    //         else if (a["name"] < b["name"]) {
-    //             return -1;
-    //         }
-    //         break;
+team.sort(function(a, b){
+    var sortable = prompt("name, sName, age, occupation, salary")
 
-    //     case "sName":
-    //         if (a["sName"] > b["sName"]) {
-    //             return 1;
-    //         }
-    //         else if (a["sName"] < b["sName"]) {
-    //             return -1;
-    //         }
-    //         break;
-        
-    //     case "occupation":
-    //         if (a["occupation"] > b["occupation"]) {
-    //             return 1;
-    //         }
-    //         else if (a["occupation"] < b["occupation"]) {
-    //             return -1;
-    //         }
-    //         break;
-
-    //     case "age":
-    //         return a["age"] - b["age"];
-    //         break;
-
-    //     case "salary":
-    //         return a["salary"] - b["salary"];
-    //         break;
-
-    //     default:
-    //         alert("None");
-    // }
-
-    
-}
-)
+    switch(sortable){
+        case "name":
+            if (a["name"] > b["name"]) {
+                return 1;
+            }
+            else if (a["name"] < b["name"]) {
+                return -1;
+            } else {return 0;}
+            break;
+        case "sName":
+            if (a["sName"] > b["sName"]) {
+                return 1;
+            }
+            else if (a["sName"] < b["sName"]) {
+                return -1;
+            } else {return 0;}
+            break;
+        case "occupation":
+            if (a["occupation"] > b["occupation"]) {
+                return 1;
+            }
+            else if (a["occupation"] < b["occupation"]) {
+                return -1;
+            } else {return 0;}
+            break;
+        case "age":
+            return a["age"] - b["age"];
+            break;
+        case "salary":
+            return a["salary"] - b["salary"];
+            break;
+        default:
+            console.log("sorting prompt is left empty")
+    }   
+})
 
 for (var i = 0; i < team.length; i++) {
     team[i].show()
