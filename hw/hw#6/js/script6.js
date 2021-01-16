@@ -117,3 +117,8 @@ var watchList = [
 }
 ];
 
+rating = watchList.map(obj=>([obj['Title'],obj['imdbRating']]));
+
+for(var i = 0; i < rating.length; i++) {
+    console.log(rating[i])
+}
