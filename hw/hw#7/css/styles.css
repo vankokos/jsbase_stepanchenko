@@ -50,7 +50,7 @@ body {
   justify-content: center;
 }
 
-.modalbox__input-name, .modalbox__input-number, .modalbox__input-ccv, .modalbox__input-date {
+.modalbox__input-name, .modalbox__input-email {
   display: block;
   font-size: 18px;
   margin-bottom: 10px;
