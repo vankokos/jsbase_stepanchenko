@@ -1,0 +1,98 @@
+body {
+  background-color: black;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.button {
+  outline: none;
+  background-color: red;
+  border: none;
+  height: 150px;
+  width: 300px;
+  cursor: pointer;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 40px;
+  border-radius: 1000px;
+  transition: 0.5s;
+  transform: scale(1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -150px;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+
+.modalbox {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -175px;
+  margin-left: -200px;
+  background-color: #cdcdcd;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modalbox__input-name, .modalbox__input-number, .modalbox__input-ccv, .modalbox__input-date {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.modalbox__btn-send, .modalbox__btn-cancel {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  width: 350px;
+  margin-bottom: 10px;
+}
+
+.modalbox__btn-send:hover, .modalbox__btn-cancel:hover {
+  color: white;
+}
+
+.modalbox__btn-send {
+  background-color: #630ba6;
+  margin-right: 10px;
+  transition: 0.2s;
+  border-radius: 5px;
+}
+
+.modalbox__btn-send:hover {
+  background-color: #3e0e78;
+  transition: 0.4s;
+}
+
+.modalbox__btn-cancel {
+  background-color: #cd0924;
+  border-radius: 5px;
+}
+
+.modalbox__btn-cancel:hover {
+  color: white;
+  background-color: #e7465c;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,102 @@
+body {
+    background-color:black;
+
+}
+
+.container {
+    width:1000px;
+    margin:0 auto;
+}
+
+.button {
+    outline:none;
+    background-color:red;
+    border:none;    
+    height:150px;
+    width:300px;
+    cursor: pointer;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:40px;
+    border-radius:1000px;
+    transition:0.5s;
+    transform: scale(1.0);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -150px;
+    &:hover {
+        background-color: white;
+        color:black;
+        transition:0.5s;
+        transform: scale(1.2);
+    }
+}
+
+.modalbox {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -175px;
+    margin-left: -200px;
+    background-color: rgb(205, 205, 205);
+    padding: 20px;
+    border-radius: 10px;
+    width:350px;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+
+    &__input-name,
+    &__input-number,
+    &__input-ccv,
+    &__input-date {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+
+    }
+
+    &__btn-send,
+    &__btn-cancel {
+        padding: 5px 10px;
+        border: none;
+        outline: none;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        width:350px;
+        margin-bottom: 10px;
+        
+        &:hover {
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    &__btn-send {
+        background-color: rgb(99, 11, 166);
+        margin-right: 10px;
+        transition:0.2s;
+        border-radius:5px;
+
+        &:hover {
+            background-color: rgb(62, 14, 120);
+            transition:0.4s
+        }
+    }
+
+    &__btn-cancel {
+        background-color: rgb(205, 9, 36);
+        border-radius:5px;
+        &:hover {
+            color: rgb(255, 255, 255);
+            background-color: rgb(231, 70, 92);
+        }
+    }
+}
